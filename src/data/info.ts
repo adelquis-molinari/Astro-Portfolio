@@ -17,7 +17,6 @@ export const info = {
         "✓ Se fortaleció la presencia y el reconocimiento de la marca en la región gracias a una campaña exitosa en redes sociales.",
       ],
     },
-
     {
       name: "Alkemy (Remote)",
       location: "Buenos Aires, Argentina",
@@ -30,7 +29,6 @@ export const info = {
         "✓ Se mantuvo las mejores prácticas y reglas de la empresa.",
       ],
     },
-
     {
       name: "Matias Bayman - (freelance Remote)",
       location: "Las Parejas, Santa Fe",
@@ -78,6 +76,27 @@ export const info = {
 
   projects: [
     {
+      title: "RTO Las Parejas",
+      isFeatured: true,
+      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1681216519/web%20adelkis.dev/project/rto-las-parejas_ncvvr9.webp",
+      liveUrl: "https://rtolasparejas.com.ar/",
+      isDestaq: true,
+    },
+    {
+      title: "Matias Bayma",
+      isFeatured: true,
+      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1680262803/web%20adelkis.dev/project/matias-bayma_arjyhi.webp",
+      liveUrl: "https://matiasbayma.net/",
+      isDestaq: true,
+    },
+    {
+      title: "Nivia Modas",
+      isFeatured: true,
+      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/v1680262802/web%20adelkis.dev/project/nivia-modas_qiwx4f.webp",
+      githubUrl: "https://github.com/adelquis-molinari/Nivia-Pino",
+      liveUrl: "https://crypto-hoy.vercel.app/login",
+      isDestaq: false,
+    },{
       title: "Crypto Hoy",
       isFeatured: true,
       thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1680262803/web%20adelkis.dev/project/crypto-hoy_fmtrkv.webp",
@@ -94,24 +113,9 @@ export const info = {
       isDestaq: true,
     },
     {
-      title: "Matias Bayma",
-      isFeatured: true,
-      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1680262803/web%20adelkis.dev/project/matias-bayma_arjyhi.webp",
-      liveUrl: "https://matiasbayma.net/",
-      isDestaq: true,
-    },
-    {
-      title: "Nivia Modas",
-      isFeatured: true,
-      thumbnail: "/assets/images/proyectos/nivia-modas.webp",
-      githubUrl: "https://github.com/adelquis-molinari/Nivia-Pino",
-      liveUrl: "https://crypto-hoy.vercel.app/login",
-      isDestaq: false,
-    },
-    {
       title: "Administrador de Citas",
       isFeatured: true,
-      thumbnail: "/assets/images/proyectos/administrador-citas.webp",
+      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/v1680262803/web%20adelkis.dev/project/administrador-citas_qoxmre.webp",
       githubUrl: "https://github.com/adelquis-molinari/Administrador-de-Citas",
       liveUrl: "https://administrador-de-citas-five.vercel.app",
       isDestaq: false,
@@ -123,12 +127,5 @@ export const info = {
       githubUrl: "https://github.com/adelquis-molinari/chat-ai.git",
       isDestaq: false,
     },
-    {
-      title: "RTO Las Parejas",
-      isFeatured: true,
-      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1681216519/web%20adelkis.dev/project/rto-las-parejas_ncvvr9.webp",
-      liveUrl: "https://rtolasparejas.com.ar/",
-      isDestaq: true,
-    }
   ],
 };

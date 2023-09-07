@@ -2,6 +2,7 @@
 import { IProjectDetails } from "@types";
 import IconGitHub from "@components/icons/github.astro";
 import IconLink from "@components/icons/link.astro";
+
 const { projectDetail } = Astro.props as IProjectDetails;
 const { title, thumbnail, liveUrl, githubUrl, isFeatured } = projectDetail;
 ---
@@ -40,7 +41,7 @@ const { title, thumbnail, liveUrl, githubUrl, isFeatured } = projectDetail;
         height="100%"
         alt="featureImage"
       />
-      <div class="absolute w-full bottom-0 left-0 backdrop-blur-md dark:text-white text-white bg-black/50 p-4 translate-y-[100%] group-hover:translate-y-0 transition duration-700">
+      <div class="absolute w-full bottom-0 left-0 backdrop-blur-md dark:text-white text-white bg-black/50 p-4 translate-y-[100%] group-hover:translate-y-0 transition duration-700 flex justify-between text-center">
         <h3 class="mr-2 text-xl">{title}</h3>
       </div>
     </article>

@@ -11,10 +11,10 @@ const featureProjects = info.projects.filter((project) => project.isDestaq);
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <MetaHead
-      title={"Portfolio"}
+      title={"Portafolio Adelquis Molinari"}
       description={info.about}
       ogImageUrl={"/assets/images/profile.png"}
     />
@@ -27,7 +27,7 @@ const featureProjects = info.projects.filter((project) => project.isDestaq);
         <h2 class="dark:text-light">PROYECTOS DESTACADOS</h2>
         <ProjectsWrapper projects={featureProjects} />
       </section>
-      <Experience title={"EXPERIENCE"} details={info.experience} />
+      <Experience title={"EXPERIENCIA"} details={info.experience} />
       <!-- <Experience title={"EDUCATION"} details={info.education} /> -->
     </Layout>
   </body>
