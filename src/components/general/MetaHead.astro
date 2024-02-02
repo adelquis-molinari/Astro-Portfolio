@@ -1,6 +1,7 @@
 ---
 import { IMetaHead } from "@types";
 import { info } from "@data";
+import { ViewTransitions } from "astro:transitions";
 
 const { title, description, ogImageUrl } = Astro.props as IMetaHead;
 ---
@@ -77,3 +78,4 @@ const { title, description, ogImageUrl } = Astro.props as IMetaHead;
   as="font"
   crossorigin
 />
+<ViewTransitions />

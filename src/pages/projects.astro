@@ -5,14 +5,14 @@ import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
 import MetaHead from "@components/general/MetaHead.astro";
 import Layout from "@layouts/Layout.astro";
 
-const Projects = info.projects.map((project) => project);
+const projects = info.projects.map((project) => project);
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
   <head>
     <MetaHead
-      title={"Projects"}
+      title={"projects"}
       description={"All projects are available in this page."}
       ogImageUrl={"/assets/images/profile.png"}
     />
@@ -23,7 +23,7 @@ const Projects = info.projects.map((project) => project);
       <div class="container">
         <h1 style="line-height: 1.2; ">Proyectos</h1>
       </div>
-      <ProjectsWrapper projects={Projects} />
+      <ProjectsWrapper projects={projects} />
     </Layout>
   </body>
 </html>
