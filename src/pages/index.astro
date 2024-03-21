@@ -1,11 +1,11 @@
 ---
-import { info } from "@data";
+import { info } from "../data/info";
 
-import Layout from "@layouts/Layout.astro";
-import Hero from "@components/home/Hero.astro";
-import Experience from "@components/home/Experience.astro";
-import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
-import MetaHead from "@components/general/MetaHead.astro";
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/home/Hero.astro";
+import Experience from "../components/home/Experience.astro";
+import ProjectsWrapper from "../components/general/ProjectsWrapper.astro";
+import MetaHead from "../components/general/MetaHead.astro";
 
 const featureProjects = info.projects.filter((project) => project.isDestaq);
 ---

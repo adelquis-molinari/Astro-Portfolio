@@ -1,23 +1,17 @@
 ---
-import ButtonVideo from "@components/general/ButtonVideo.astro";
-import IconReplay from "@components/icons/replay.astro";
+import ButtonVideo from "../general/ButtonVideo.astro";
+import ButtonReplay from "../general/ButtonReplay.astro";
 ---
 
 <figure class="relative">
   <figcaption class="absolute center mx-auto top-0 z-10 w-full py-4">
-    <label id="timer" role="timer">
+    <div id="timer" role="timer">
       <div class="progress-container">
         <progress id="progress" max="100" value="0">Progress</progress>
       </div>
-    </label>
+    </div>
     <ButtonVideo />
-    <button
-      class="absolute hidden bg-slate-400/50 top-8 left-24 p-4 rounded-full shadow-lg z-[9999px]"
-      aria-label="replay video"
-      id="replay"
-    >
-      <IconReplay />
-    </button>
+    <ButtonReplay />
   </figcaption>
   <video
     class="aspect-auto border-none rounded-md drop-shadow-xl"

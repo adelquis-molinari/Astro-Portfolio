@@ -1,7 +1,7 @@
 ---
-import { IHeroProps } from "@types";
+import { IHeroProps } from "../../types";
 import Video from "./Video.astro";
-import SocialSection from "@components/general/SocialSection.astro";
+import SocialSection from "../general/SocialSection.astro";
 const { name, about } = Astro.props as IHeroProps;
 ---
 
@@ -17,7 +17,7 @@ const { name, about } = Astro.props as IHeroProps;
     </div>
   </div>
 
-  <Video client:load />
+  <Video />
 </section>
 
 <script></script>

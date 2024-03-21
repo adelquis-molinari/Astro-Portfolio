@@ -1,7 +1,7 @@
 ---
-import { IProjectDetails } from "@types";
-import IconGitHub from "@components/icons/github.astro";
-import IconLink from "@components/icons/link.astro";
+import { IProjectDetails } from "../../types";
+import IconGitHub from "../icons/github.astro";
+import IconLink from "../icons/link.astro";
 
 const { projectDetail } = Astro.props as IProjectDetails;
 const { title, thumbnail, liveUrl, githubUrl, isFeatured } = projectDetail;
