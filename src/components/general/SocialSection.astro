@@ -1,0 +1,34 @@
+---
+import { info } from "@data";
+import IconTwitter from "@components/icons/twitter.astro";
+import IconGitHub from "@components/icons/github.astro";
+import IconLinkedIn from "@components/icons/linkedin.astro";
+import IconEmail from "@components/icons/email.astro";
+---
+
+<div class="grid grid-cols-4 gap-4">
+  <a
+    aria-label="Social Media"
+    href={info.socialMedia.github}
+    target="_blank"
+    class="footer-icons hover:bg-purple-500"
+  >
+    <IconGitHub />
+  </a>
+  <a
+    aria-label="Social Media"
+    href={info.socialMedia.linkedin}
+    target="_blank"
+    class="footer-icons hover:bg-cyan-700"
+  >
+    <IconLinkedIn />
+  </a>
+  <a
+    aria-label="Social Media"
+    href={`mailto:${info.socialMedia.email}`}
+    target="_blank"
+    class="footer-icons hover:bg-rose-700"
+  >
+    <IconEmail />
+  </a>
+</div>

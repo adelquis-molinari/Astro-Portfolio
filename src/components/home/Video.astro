@@ -1,0 +1,98 @@
+---
+import ButtonVideo from "@components/general/ButtonVideo.astro";
+import IconReplay from "@components/icons/replay.astro";
+---
+
+<figure class="relative">
+  <figcaption class="absolute center mx-auto top-0 z-10 w-full py-4">
+    <label id="timer" role="timer">
+      <div class="progress-container">
+        <progress id="progress" max="100" value="0">Progress</progress>
+      </div>
+    </label>
+    <ButtonVideo />
+    <button
+      class="absolute hidden bg-slate-400/50 top-8 left-24 p-4 rounded-full shadow-lg z-[9999px]"
+      aria-label="replay video"
+      id="replay"
+    >
+      <IconReplay />
+    </button>
+  </figcaption>
+  <video
+    class="aspect-auto border-none rounded-md drop-shadow-xl"
+    src="/videos/precentacion.mp4"
+    width="363"
+    height="678"
+    id="video"
+    muted
+    autoplay
+  >
+  </video>
+</figure>
+<script>
+  const progress: HTMLProgressElement = document.getElementById(
+    "progress"
+  ) as HTMLProgressElement;
+  const video: HTMLVideoElement = document.getElementById(
+    "video"
+  ) as HTMLVideoElement;
+
+  function updateProgress(): void {
+    if (video && progress) {
+      const value = (video.currentTime / video.duration) * 100;
+      progress.value = value;
+    }
+  }
+
+  if (video && progress) {
+    video.addEventListener("timeupdate", updateProgress);
+  }
+
+  const replay: HTMLButtonElement = document.getElementById(
+    "replay"
+  ) as HTMLButtonElement;
+
+  if (replay && video) {
+    // muestra el botón de repetir solo si el video ha terminado
+    // repite el video solo si el progreso es 100%
+
+    video.addEventListener("ended", () => {
+      // saca la clase hidden del botón de repetir
+      replay.style.display = "block";
+    });
+
+    replay.addEventListener("click", () => {
+      video.currentTime = 0;
+      replay.style.display = "none";
+      video.play();
+    });
+  }
+</script>
+
+<style>
+  .progress-container {
+    width: 80%;
+    height: 10px;
+    background-color: #f0f0f046;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  progress {
+    width: 100%;
+    height: 10px;
+  }
+
+  progress::-webkit-progress-bar {
+    background-color: #8080803f;
+    border-radius: 8px;
+  }
+
+  progress::-webkit-progress-value {
+    background-color: #e9e9e9;
+    border-radius: 8px;
+  }
+</style>

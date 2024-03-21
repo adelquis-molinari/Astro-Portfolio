@@ -1,53 +1,15 @@
 ---
 import { info } from "@data";
-import IconTwitter from "@components/icons/twitter.astro";
-import IconGitHub from "@components/icons/github.astro";
-import IconLinkedIn from "@components/icons/linkedin.astro";
-import IconEmail from "@components/icons/email.astro";
+import SocialSection from "@components/general/SocialSection.astro";
 ---
 
-<footer class="bg-gradient-to-t to-transparent from-sky-300 dark:from-sky-950">
+<footer class="bg-gradient-to-t to-transparent from-sky-950">
   <section
     class="container flex sm:flex-row flex-col justify-between items-center py-8"
   >
-    <p class="dark:text-light text-right my-8">
-      Developed by <strong class="text-teal-800 dark:text-teal-300"
-        >Adelkis.Dev</strong
-      >
+    <p class="text-light text-right my-8">
+      Developed by <strong class="text-teal-300">Adelkis.Dev</strong>
     </p>
-    <div class="grid grid-cols-4 gap-4">
-      <a
-        aria-label="Social Media"
-        href={info.socialMedia.twitter}
-        target="_blank"
-        class="footer-icons hover:bg-sky-500"
-      >
-        <IconTwitter />
-      </a>
-      <a
-        aria-label="Social Media"
-        href={info.socialMedia.github}
-        target="_blank"
-        class="footer-icons hover:bg-purple-500"
-      >
-        <IconGitHub />
-      </a>
-      <a
-        aria-label="Social Media"
-        href={info.socialMedia.linkedin}
-        target="_blank"
-        class="footer-icons hover:bg-cyan-700"
-      >
-        <IconLinkedIn />
-      </a>
-      <a
-        aria-label="Social Media"
-        href={`mailto:${info.socialMedia.email}`}
-        target="_blank"
-        class="footer-icons hover:bg-rose-700"
-      >
-        <IconEmail />
-      </a>
-    </div>
+    <SocialSection />
   </section>
 </footer>

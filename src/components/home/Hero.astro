@@ -1,19 +1,23 @@
 ---
 import { IHeroProps } from "@types";
+import Video from "./Video.astro";
+import SocialSection from "@components/general/SocialSection.astro";
 const { name, about } = Astro.props as IHeroProps;
 ---
 
-<section
-  class="bg-cover relative bg-center h-[750px] w-full flex flex-col justify-center items-center"
->
-  <div class="container absolute z-10">
+<section class="bg-center w-full flex justify-between container my-16">
+  <div>
     <h1>{name}</h1>
     <h2 class="text-2xl mb-8 text-blue">Full Stack Developer</h2>
-    <p class="dark:text-light text-lg mb-16">
+    <p class="text-light text-lg text-balance">
       {about}
     </p>
+    <div class="w-1/2 py-8">
+      <SocialSection />
+    </div>
   </div>
-  <canvas class="opacity-30" id="hero"></canvas>
+
+  <Video client:load />
 </section>
 
 <script></script>

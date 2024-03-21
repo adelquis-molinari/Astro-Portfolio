@@ -2,15 +2,15 @@ export const info = {
   baseUrl: "https://",
   name: "Adelkis Dev",
   jobDescription: "Web Developer",
-  about: `Mi enfoque profesional es encontrar soluciones justas a través de sana discusión en equipo, para generar impacto con desarrollos eficientes y simples.
+  about: `Mi enfoque profesional es encontrar soluciones a través de sana discusión en equipo, para generar impacto con desarrollos eficientes y simples.
   `,
 
   experience: [
     {
       name: "RTO Las Parejas",
       location: "Las Parejas, Santa Fe",
-      startDate: "Mayo 2021",
-      endDate: "Presente",
+      startDate: "Mayo 2023",
+      endDate: "Julio 2023",
       description: [
         "✓ Se aumentó la captación y recuperación de clientes en un 30% mediante una estrategia de seguimiento por WhatsApp.",
         "✓ Se creó una página web optimizada para atraer tráfico orgánico y captar nuevos clientes.",
@@ -78,28 +78,28 @@ export const info = {
     {
       title: "RTO Las Parejas",
       isFeatured: true,
-      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1681216519/web%20adelkis.dev/project/rto-las-parejas_ncvvr9.webp",
+      thumbnail: "https://res.cloudinary.com/adelkis-dev/image/upload/v1681216519/web%20adelkis.dev/project/rto-las-parejas_ncvvr9.webp",
       liveUrl: "https://rtolasparejas.com.ar/",
       isDestaq: true,
     },
     {
       title: "Matias Bayma",
       isFeatured: true,
-      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1680262803/web%20adelkis.dev/project/matias-bayma_arjyhi.webp",
+      thumbnail: "https://res.cloudinary.com/adelkis-dev/image/upload/v1680262803/web%20adelkis.dev/project/matias-bayma_arjyhi.webp",
       liveUrl: "https://matiasbayma.net/",
       isDestaq: true,
     },
     {
       title: "Nivia Modas",
       isFeatured: true,
-      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/v1680262802/web%20adelkis.dev/project/nivia-modas_qiwx4f.webp",
+      thumbnail: "https://res.cloudinary.com/adelkis-dev/image/upload/v1680262802/web%20adelkis.dev/project/nivia-modas_qiwx4f.webp ",
       githubUrl: "https://github.com/adelquis-molinari/Nivia-Pino",
       liveUrl: "https://crypto-hoy.vercel.app/login",
       isDestaq: false,
     },{
       title: "Crypto Hoy",
       isFeatured: true,
-      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1680262803/web%20adelkis.dev/project/crypto-hoy_fmtrkv.webp",
+      thumbnail: "https://res.cloudinary.com/adelkis-dev/image/upload/v1680262803/web%20adelkis.dev/project/crypto-hoy_fmtrkv.webp",
       githubUrl: "https://github.com/adelquis-molinari/Crypto-hoy",
       liveUrl: "https://crypto-hoy.vercel.app",
       isDestaq: true,
@@ -107,7 +107,7 @@ export const info = {
     {
       title: "EvuCar",
       isFeatured: true,
-      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1680262803/web%20adelkis.dev/project/evucar_h5pty0.webp",
+      thumbnail: "https://res.cloudinary.com/adelkis-dev/image/upload/v1680262803/web%20adelkis.dev/project/evucar_h5pty0.webp",
       githubUrl: "https://github.com/adelquis-molinari/Evuca-Concesionaria",
       liveUrl: "https://evuca-concesionaria.vercel.app/",
       isDestaq: true,
@@ -115,7 +115,7 @@ export const info = {
     {
       title: "Administrador de Citas",
       isFeatured: true,
-      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/v1680262803/web%20adelkis.dev/project/administrador-citas_qoxmre.webp",
+      thumbnail: "https://res.cloudinary.com/adelkis-dev/image/upload/v1680262803/web%20adelkis.dev/project/administrador-citas_qoxmre.webp",
       githubUrl: "https://github.com/adelquis-molinari/Administrador-de-Citas",
       liveUrl: "https://administrador-de-citas-five.vercel.app",
       isDestaq: false,
@@ -123,7 +123,7 @@ export const info = {
     {
       title: "Chat App",
       isFeatured: true,
-      thumbnail: "https://res.cloudinary.com/da4bwtyqa/image/upload/c_scale,w_512/v1680262795/web%20adelkis.dev/project/chat-ai-clone-de-chat-gpt3_peglje.png",
+      thumbnail: "https://res.cloudinary.com/adelkis-dev/image/upload/v1680262795/web%20adelkis.dev/project/chat-ai-clone-de-chat-gpt3_peglje.png",
       githubUrl: "https://github.com/adelquis-molinari/chat-ai.git",
       isDestaq: false,
     },
