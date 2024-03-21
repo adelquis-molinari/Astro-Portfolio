@@ -10,7 +10,7 @@ import MetaHead from "@components/general/MetaHead.astro";
 const featureProjects = info.projects.filter((project) => project.isDestaq);
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <MetaHead
@@ -24,7 +24,7 @@ const featureProjects = info.projects.filter((project) => project.isDestaq);
     <Layout>
       <Hero name={info.name} about={info.about} />
       <section class="container">
-        <h2 class="dark:text-light">PROYECTOS DESTACADOS</h2>
+        <h2 class="text-light">PROYECTOS DESTACADOS</h2>
         <ProjectsWrapper projects={featureProjects} />
       </section>
       <Experience title={"EXPERIENCIA"} details={info.experience} />
