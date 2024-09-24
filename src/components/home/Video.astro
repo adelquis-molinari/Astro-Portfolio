@@ -1,9 +1,9 @@
 ---
-import ButtonVideo from "../general/ButtonVideo.astro";
-import ButtonReplay from "../general/ButtonReplay.astro";
+import ButtonVideo from "../general/ButtonVideo.astro"
+import ButtonReplay from "../general/ButtonReplay.astro"
 ---
 
-<figure class="relative">
+<figure class="relative print:hidden">
   <figcaption class="absolute center mx-auto top-0 z-10 w-full py-4">
     <div id="timer" role="timer">
       <div class="progress-container">
@@ -27,25 +27,25 @@ import ButtonReplay from "../general/ButtonReplay.astro";
 <script>
   const progress: HTMLProgressElement = document.getElementById(
     "progress"
-  ) as HTMLProgressElement;
+  ) as HTMLProgressElement
   const video: HTMLVideoElement = document.getElementById(
     "video"
-  ) as HTMLVideoElement;
+  ) as HTMLVideoElement
 
   function updateProgress(): void {
     if (video && progress) {
-      const value = (video.currentTime / video.duration) * 100;
-      progress.value = value;
+      const value = (video.currentTime / video.duration) * 100
+      progress.value = value
     }
   }
 
   if (video && progress) {
-    video.addEventListener("timeupdate", updateProgress);
+    video.addEventListener("timeupdate", updateProgress)
   }
 
   const replay: HTMLButtonElement = document.getElementById(
     "replay"
-  ) as HTMLButtonElement;
+  ) as HTMLButtonElement
 
   if (replay && video) {
     // muestra el botón de repetir solo si el video ha terminado
@@ -53,14 +53,14 @@ import ButtonReplay from "../general/ButtonReplay.astro";
 
     video.addEventListener("ended", () => {
       // saca la clase hidden del botón de repetir
-      replay.style.display = "block";
-    });
+      replay.style.display = "block"
+    })
 
     replay.addEventListener("click", () => {
-      video.currentTime = 0;
-      replay.style.display = "none";
-      video.play();
-    });
+      video.currentTime = 0
+      replay.style.display = "none"
+      video.play()
+    })
   }
 </script>
 
